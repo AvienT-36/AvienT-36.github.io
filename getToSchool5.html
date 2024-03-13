@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="darkSheet" rel="stylesheet" media="none" href="Dark.css">
+    <link id="lightSheet" rel="stylesheet" href="Style.css">
+    <title>My Game</title>
+</head>
+
+<body>
+    <div id="content">
+        <div id="banner">
+            <h1>My Game</h1>
+            <ul>
+                <li><a href="mainPage.html">Main Page</a></li>.
+                <li><a href="aboutPage.html">About Page</a></li>.
+                <li><a href="#" onclick="changesheet()">Change Mode</a></li>.
+            </ul>
+        </div>
+        <div id="blogposts">
+            <div class="post">
+                <h2>The Game</h2>
+                <p>Click on the image below to play my game!</p>
+                <a href="GetToSchool/index.html">
+                    <img src="img/OIP (1).jfif" alt="The Game">
+                </a>
+
+
+                <div id="blogposts">
+                    <div class="post">
+                        <h2>Gallery</h2>
+                        <div class="Gallery">
+                            <p>These are some images from my game that I took. I threw them into this gallery!</p>
+                            <a href="img/gamescreen.idk.png"><img src="img/gamescreen.idk.png" alt=""></a>
+                            <a href="img/Screenshot 2024-02-29 092047.png"><img
+                                    src="img/Screenshot 2024-02-29 092047.png" alt=""></a>
+                            <a href="img/Screenshot 2024-02-29 092122.png"><img
+                                    src="img/Screenshot 2024-02-29 092122.png" alt=""></a>
+                            <a href="img/Screenshot 2024-02-29 092208.png"><img
+                                    src="img/Screenshot 2024-02-29 092208.png" alt=""></a>
+                            <a href="img/Screenshot 2024-02-29 092236.png"><img
+                                    src="img/Screenshot 2024-02-29 092236.png" alt=""></a>
+                            <a href="img/Screenshot 2024-02-29 092308.png"><img
+                                    src="img/Screenshot 2024-02-29 092308.png" alt=""></a>
+                            <a href="img/Screenshot 2024-02-29 092342.png"><img
+                                    src="img/Screenshot 2024-02-29 092342.png" alt=""> </a>
+                            <a href="img/Screenshot 2024-02-29 092407.png"><img
+                                    src="img/Screenshot 2024-02-29 092407.png" alt=""></a>
+                            <a href="img/Screenshot 2024-02-29 092448.png"><img
+                                    src="img/Screenshot 2024-02-29 092448.png" alt=""></a>
+                            <a href="img/powerbracletboss.PNG"><img src="img/powerbracletboss.PNG" alt=""></a>
+                           
+                        </div>
+</body>
+
+<script>
+
+    var lightMode = true;
+    function changesheet() {
+
+
+        // make lightmode equal not light mode
+        lightMode = !lightMode;
+        var lightSheet = document.getElementById("lightSheet")
+        var darkSheet = document.getElementById("darkSheet")
+        // if lightmode turned off, display dark stylesheet
+        if (lightMode == false) {
+            console.log("Turning dark mode on...");
+            darkSheet.media = " ";
+            lightSheet.media = "none";
+        } else {
+            console.log("Turning light mode on...");
+            darkSheet.media = "none";
+            lightSheet.media = " ";
+        }
+    }
+</script>
+
+</html>

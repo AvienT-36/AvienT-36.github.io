@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="darkSheet" rel="stylesheet" media="none" href="Dark.css">
+    <link id="lightSheet" rel="stylesheet" href="Style.css">
+    <title>AboutPage</title>
+
+</head>
+
+<body>
+    <div id="content">
+        <div id="banner">
+            <h1>About Page</h1>
+            <ul>
+                <li><a href="mainPage.html">Main Page</a></li>.
+                <li><a href="getToSchool5.html">My Game</a></li>.
+                <li><a href="#" onclick="changesheet()">Change Mode</a></li>.
+            </ul>
+        </div>
+
+        <div id="blogposts">
+            <div class="post">
+                <h2>The Story</h2>
+                <p>Once I got into this programing class, I didn't know what to expect. When we first did RPG maker, I was very exicted to try it out. It started off good when we learned about the flow charts. Then we started to do more HTMl and it wasn't what I expected, but I got used to it and I am begining to like it. Through all of this I ended up here. I am definitely not the best at HTML, but I have created this website, so thats something. Anyway I hope you enjoy both the game I made and this website I created.  :D</p>
+
+                <div id="blogposts">
+                    <div class="post">
+                        <h2>How to play</h2>
+                        <p>Once you load up the game you have a few options. New Game, Continue, and Options. If its your first time then click New game. If you have alredy played the game before, then click continue a load your old save. Remeber that you can always change things in the options if someting feels off. Now lets get started! Once your in the game, there are things you need to learn. You can use your mouse to click or the arrow keys. Use enter to do things like collect items, talk to NPC's, or to walk trough doors!For other things in the game, just try clicking on them. Now go explore and get to school! </p>
+                    </div>
+</body>
+<script>
+
+    var lightMode = true;
+    function changesheet() {
+
+
+        // make lightmode equal not light mode
+        lightMode = !lightMode;
+        var lightSheet = document.getElementById("lightSheet")
+        var darkSheet = document.getElementById("darkSheet")
+        // if lightmode turned off, display dark stylesheet
+        if (lightMode == false) {
+            console.log("Turning dark mode on...");
+            darkSheet.media = " ";
+            lightSheet.media = "none";
+        } else {
+            console.log("Turning light mode on...");
+            darkSheet.media = "none";
+            lightSheet.media = " ";
+        }
+    }
+</script>
+</html>
